@@ -1,0 +1,516 @@
+:root{
+    --white : #fff;
+    --black : #000;
+    --dark-blue : #2C2546;
+    --pink : #fa0758;
+    --grape : #8134AF;
+    --slate : #0f172a;
+    --slate-500 : #64748b;
+    --blue : #211166;
+}
+*,
+*::before,
+*::after {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--blue);
+    padding-bottom: 2%;
+}
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.left-header {
+    display: flex;
+}
+.search {
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+.search-input {
+    width: 120%;
+    padding: 3%;
+    border: none;
+    
+    background-color: var(--slate);
+}
+.navbar  ul {
+    display: flex;
+}
+.navbar  ul  li  a {
+    display: inline-block;
+    flex-direction: column;
+    padding: 1.5px;
+    min-width: 85px;
+    color: var(--white);
+}
+.login-btn {
+    background-image: linear-gradient(to right,var(--grape),var(--pink));
+    border-radius: 5px;
+}
+.swiper {
+    width: 80%;
+    margin: 5rem;
+    height: 50vh;
+}
+.swiper-slide  img {
+    width: 100%;
+    
+}
+.content {
+    margin-top: -20%;
+    margin-bottom: 5%;
+}
+.content  ul  li {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid var(--slate-500);
+    padding: 2%;
+    margin-top: 10px;
+}
+.content  ul  li  a {
+    font-size: 10pt;
+    color: var(--slate-500);
+}
+ul  li.active  a {
+    color: var(--white);
+}
+
+
+
+
+@media screen and (max-width:724px) {
+   .swiper {
+      width: 100%;
+      margin: 6.5rem;
+      height: 15vh;
+   }
+   .swiper-slide img {
+      width: 100%;
+      
+   }
+   .game__grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 0.5rem;
+      font-size: 10pt;
+   }
+   .game img {
+      width: 100%;
+      transform: skewX(-10deg);
+   }
+   .product-title {
+      position: absolute;
+      margin-top: -2rem;
+      color: var(--white);
+      background-image: linear-gradient(to right,var(--blue),var(--grape),var(--pink));
+      opacity: .7;
+      width: 33vw;
+      padding: 5px;
+      transform: skew(-10deg);
+   }
+   .mlbb-img:hover,
+   .lol-img:hover,
+   .ff-img:hover,
+   .pubgm-img:hover,
+   .codm-img:hover,
+   .valo-img:hover,
+   .genshin-img:hover,
+   .hdi-img:hover {
+      filter: blur(.7px);
+   }
+   footer {
+      width: 100%;
+      background-color: var(--blue);
+      margin-top: 1.5rem;
+      padding: .5rem 0;
+   }
+   .footer-title {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      font-weight: 600;
+      border-radius: 5px;
+   }
+   footer  ul  li  a {
+      color: var(--white);
+   }
+   footer  ul  li  a:hover {
+      color: var(--slate-500);
+   }
+   .payment {
+      display: flex;
+      gap: 0.5rem;
+   }
+   .payment  img {
+      border-radius: .3rem;
+      width: 3.5rem;
+   }
+   .copy {
+      background-color: var(--blue);
+      padding: 1rem;
+   }
+   .copyright {
+      color: var(--slate-500);
+   }
+   .sosmed {
+      display: flex;
+      gap: 1rem;
+   }
+   .sosmed  a {
+      color: var(--slate-500);
+   }
+   .sosmed  a:hover {
+      color: var(--white);
+   }
+}
+
+@media screen and (min-width:724px) {
+   .swiper {
+      width: 100%;
+      margin-top: 8rem;
+      height: 25vh;
+   }
+   .swiper-slide  img {
+      width: 100%;
+      
+   }
+   .content {
+      margin-top: -5rem;
+      margin-bottom: 1rem;
+   }
+   .content  ul  li {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid var(--slate-500);
+      padding: 10px;
+      margin-top: 15px;
+   }
+   .game__grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 0.5rem;
+      font-size: 10pt;
+   }
+   .game  img {
+      width: 100%;
+      transform: skewX(-10deg);
+   }
+   .product-title {
+      position: absolute;
+      margin-top: -2rem;
+      color: var(--white);
+      background-image: linear-gradient(to right,var(--blue),var(--grape),var(--pink));
+      opacity: 0.7;
+      width: 27vw;
+      padding: 5px;
+      transform: skew(-10deg);
+   }
+    
+   .mlbb-img:hover,
+   .lol-img:hover,
+   .ff-img:hover,
+   .pubgm-img:hover,
+   .codm-img:hover,
+   .valo-img:hover,
+   .genshin-img:hover,
+   .hdi-img:hover {
+      filter: blur(.7px);
+   }
+   footer {
+      width: 100%;
+      background-color: var(--blue);
+      margin-top: 1.5rem;
+      padding: .5rem 0;
+   }
+   .footer-title {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      font-weight: 600;
+      border-radius: 5px;
+   }
+   footer  ul  li  a { color: var(--white); }
+   footer  ul  li  a:hover { color: var(--slate-500); }
+   .payment {
+      display: flex;
+      gap: 0.5rem;
+   }
+   .payment  img {
+      border-radius: 5px;
+      width: 100px;
+   }
+   .copy {
+      background-color: var(--blue);
+      padding: 1rem;
+   }
+   .copyright{ color: var(--slate-500); }
+   .sosmed{
+      display: flex;
+      gap: 1rem;
+   }
+   .sosmed a { color: var(--slate-500); }
+   .sosmed a:hover { color: var(--white); }
+}
+
+@media screen and (min-width:860px) {
+    .swiper {
+        width: 100%;
+        margin-top: 8rem;
+        height: 30vh;
+    }
+    .swiper-slide  img {
+        width: 100%;
+        
+    }
+    .content {
+        margin-top: -5rem;
+        margin-bottom: 1rem;
+    }
+    .content  ul  li {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 999px;
+        border: 1px solid var(--slate-500);
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .game__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.5rem;
+        font-size: 10pt;
+    }
+    .game  img{
+        width: 100%;
+        transform: skewX(-10deg);
+    }
+    .product-title {
+        position: absolute;
+        margin-top: -2rem;
+        color: var(--white);
+        background-image: linear-gradient(to right,var(--blue),var(--grape),var(--pink));
+        opacity: 0.7;
+        width: 27vw;
+        padding: 5px;
+        transform: skew(-10deg);
+    }
+    .mlbb-img:hover,
+    .lol-img:hover,
+    .ff-img:hover,
+    .pubgm-img:hover,
+    .codm-img:hover,
+    .valo-img:hover,
+    .genshin-img:hover,
+    .hdi-img:hover {
+       filter: blur(.7px);
+    }
+      footer {
+         width: 100%;
+         background-color: var(--blue);
+         margin-top: 1.5rem;
+         padding: .5rem 0;
+      }
+      .footer-title {
+         margin-bottom: 1rem;
+         margin-top: 2rem;
+         font-weight: 600;
+         border-radius: 5px;
+      }
+      footer  ul  li  a { color: var(--white); }
+      footer  ul  li  a:hover { color: var(--slate-500); }
+      .payment {
+         display: flex;
+         gap: 0.5rem;
+      }
+      .payment  img {
+         border-radius: 5px;
+         width: 100px;
+      }
+      .copy {
+         background-color: var(--blue);
+         padding: 1rem;
+      }
+      .copyright { color: var(--slate-500); }
+      .sosmed {
+         display: flex;
+         gap: 1rem;
+      }
+      .sosmed  a { color: var(--slate-500); }
+      .sosmed  a:hover { color: var(--white); }
+}
+
+@media screen and (min-width: 1024px) {
+   .swiper {
+      margin-top: 5rem;
+   }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blue);
+        padding-bottom: 0;
+    }
+    .wrap {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-header {
+        display: flex;
+    }
+    .search {
+        margin-top: 18px;
+        margin-bottom: 15px;
+    }
+    .search-input {
+        margin-left: 10px;
+        width: 220%;
+        padding: 3%;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--slate);
+        color: var(--white);
+    }
+    .navbar {
+        margin-left: 15rem;
+    }
+    .navbar ul {
+        display: flex;
+    }
+    .navbar ul li a {
+        display: inline-block;
+        flex-direction: column;
+        padding: 10px;
+        min-width: 100px;
+        color: var(--white);
+    }
+    .login-btn {
+        background-image: linear-gradient(to right,var(--grape),var(--pink));
+        border-radius: 5px;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper {
+        width: 100%;
+        height: 50vh;
+    }
+    .swiper-slide img {
+        width: 100%;
+        
+    } 
+    .content {
+        margin-top: -5rem;
+        margin-bottom: 1rem;
+    }
+    .content ul li {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 999px;
+        border: 1px solid var(--slate-500);
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .game__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+    }
+    .game img {
+        transform: skewX(-10deg);
+    }
+    .product-title {
+        position: absolute;
+        margin-top: -2rem;
+        color: var(--white);
+        background-image: linear-gradient(to right,var(--blue),var(--grape),var(--pink));
+        opacity: 0.7;
+        width: 18vw;
+        padding: 5px;
+        transform: skew(-10deg);
+    }
+    .mlbb-img:hover,
+    .lol-img:hover,
+    .ff-img:hover,
+    .pubgm-img:hover,
+    .codm-img:hover,
+    .valo-img:hover,
+    .genshin-img:hover,
+    .hdi-img:hover {
+       filter: blur(.7px);
+    }
+     footer {
+        padding: 2rem;
+        margin-top: 4rem;
+        background-color: var(--blue);
+     }
+     .footer-title {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+     }
+     footer ul li a{
+        color: var(--white);
+     }
+     footer ul li a:hover{
+        color: var(--slate-500);
+     }
+     .payment{
+        display: flex;
+        gap: 0.5rem;
+     }
+     .payment img{
+        border-radius: 5px;
+        width: 100px;
+     }
+     .copy{
+        background-color: var(--blue);
+        padding: 1rem;
+     }
+     .copyright{
+        color: var(--slate-500);
+     } 
+     .sosmed{
+        display: flex;
+        gap: 1rem;
+     }
+     .sosmed a{
+        color: var(--slate-500);
+     }
+     .sosmed a:hover{
+        color: var(--white);
+     }
+}
