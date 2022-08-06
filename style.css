@@ -1,3 +1,11 @@
+/* 
+----- © Copyright wrseno ----- 
+ YT : Sen Tutorial 
+ IG : wrzeno_
+ 
+*/
+
+
 :root{
     --white : #fff;
     --black : #000;
@@ -98,6 +106,32 @@ ul  li.active  a {
 }
 
 
+@media screen and (min-width:320px){
+   .search-input {
+      margin-left: 10px;
+      width: 80%;
+      padding: 3%;
+      border: none;
+      border-radius: 20px;
+      background-color: var(--slate);
+      color: var(--white);
+  }
+   .left-header > a > img {
+      width: 8rem;
+      margin-top: .5rem;
+   }
+}
+@media screen and (min-width:350px){
+   .search-input {
+      margin-left: 10px;
+      width: 100%;
+      padding: 3%;
+      border: none;
+      border-radius: 20px;
+      background-color: var(--slate);
+      color: var(--white);
+  }
+}
 
 
 @media screen and (max-width:724px) {
